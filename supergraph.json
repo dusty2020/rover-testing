@@ -1,0 +1,23 @@
+{
+  "federation_version": 2,
+  "subgraphs": {
+    "product": {
+      "routing_url": "",
+      "schema": {
+        "file": "subgraphs/product.graphql"
+      }
+    },
+    "review": {
+      "routing_url": "",
+      "schema": {
+        "file": "subgraphs/review.graphql"
+      }
+    },
+    "listing": {
+      "routing_url": "",
+      "schema": {
+        "file": "subgraphs/listing.graphql"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+type Query {
+    listings: [Listing]
+}
+
+type Product @extends @key(fields: "id") {
+    id: ID @external
+    title: String @external
+}
+
+type Listing {
+    id: ID
+    product: Product!
+}
