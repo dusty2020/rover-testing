@@ -4,7 +4,7 @@ type Query {
 
 type Product @extends @key(fields: "id") {
     id: ID @external
-    title: String @external
+    title: String! @external
 }
 
 type Listing {

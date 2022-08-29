@@ -1,10 +1,14 @@
+extend schema
+@link(url: "https://specs.apollo.dev/federation/v2.0",
+    import: ["@key", "@external", "@extends", "@requires", "@shareable"])
+
 type Query {
     reviews: [Review]
 }
 
-type Product @extends @key(fields: "id") {
-    id: ID @external
-    title: String @external
+type Product @key(fields: "id") {
+    id: ID
+    title: String! @external
     reviews: [Review]
 }
 
